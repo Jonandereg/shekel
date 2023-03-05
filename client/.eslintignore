@@ -1,0 +1,9 @@
+# dependencies
+node_modules
+
+# distributables
+dist
+# ignore next generated files
+next-env.d.ts
+
+*.json
