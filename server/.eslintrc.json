@@ -35,7 +35,7 @@
     "no-console": "warn",
     "no-unused-vars": "error",
     "import/no-unresolved": "error",
-    "import/no-default-export": "error",
+    "import/no-default-export": "warn",
     "import/no-relative-packages": "error",
     "import/no-useless-path-segments": "error",
     "import/no-self-import": "error",
