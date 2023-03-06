@@ -103,8 +103,8 @@ const processImageStream = (imageStream: any) => {
 
   imageStream.on('end', async () => {
     const file = Buffer.concat(buffer)
-
-    consumerSocket.emit('message', createPdf(file))
+    const pdf = await createPdf(file)
+    consumerSocket.emit('message', pdf.output('datauristring'))
 
     console.log('pdf created')
   })
@@ -114,6 +114,5 @@ const createPdf = async (file: Buffer) => {
   const pdf = new jsPDF()
 
   pdf.addImage(file.toString('base64'), 'PNG', 0, 0, 210, 100)
-  const blob = pdf.output('blob')
-  return blob
+  return pdf
 }
