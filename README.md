@@ -64,6 +64,7 @@ API:
 * expand on the number of options the client could request from the report like adding more cryptos
 * test in other browsers
 * prettify chart
+* remove hard coded values for Plotly Image URL 
 
 
 ## How to run this project 
@@ -77,12 +78,13 @@ To run the client:
 
 to run the server:
 
-1.open a new terminal 
-2. cd server
-3. run `npm run rabbit` 
-4. open another terminal
-5.cd server
-6. run `npm run start`
+1.create an .env file with the variables shared with you through a different channel 
+2.open a new terminal 
+3. cd server
+4. run `npm run rabbit` 
+5. open another terminal
+6.cd server
+7. run `npm run start`
 
 
 
