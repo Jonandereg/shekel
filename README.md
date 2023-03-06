@@ -9,7 +9,7 @@ By the way if you are wondering about the name Shekel is because shekel is the f
 
 ## Timeframe and other considerations
 Due to my current role and personal situation the time I had for this project was limited, this project was done exclusively over the weekend
-with a split on Saturday of 70% - 30% developing and Sunday 80% developing - 20% research. I estimate including research time this whole project might have take me around 16 to 20 hours. 
+with a split on Saturday of 70% Research- 30% developing and Sunday 80% developing - 20% research. I estimate including research time this whole project might have take me around 16 to 20 hours. 
 main reason for that is that I was unfamiliar with the following topics as you will probably notice in the code:
 - how to handle long standing requests
 - how to use a message queue
@@ -53,14 +53,18 @@ API:
 * jsPDF to generate the PDF 
 
 
-## What I would Improve if I kept working on this
-* Testing, would definetely add testing, for now was focusing on making the full cycle work with the limited time, 
+## Things to Improve 
+* Testing, will definetely add testing, for now the focus was on making the full cycle work with the limited time
+* Error handling and visibility using a service like Sentry as opposed to console.logs everywhere
 * Improve Msg Queue pattern currently only one worker handles the queue 
 * Related to the above find a way to run the queue on the cloud and not in Docker
 * Improve stability of socket connection between client and server
 * Prettify client app 
 * Make actual candlestick chart in the PDF
 * expand on the number of options the client could request from the report like adding more cryptos
+* test in other browsers
+* prettify chart
+
 
 ## How to run this project 
 
@@ -69,6 +73,7 @@ To run the client:
 1. open new terminal
 2. cd client
 3. run `npm run dev`
+4. open [http://localhost:3000](http://localhost:3000) in your browser (tested in Chrome) 
 
 to run the server:
 
