@@ -12,6 +12,7 @@ import {
 } from '@chakra-ui/react'
 import { useState } from 'react'
 
+// This is the HomeScreen component that is rendered in the Home page
 export const HomeScreen = () => {
   const [interval, setInterval] = useState('1d')
   const [asset, setAsset] = useState('BTC')

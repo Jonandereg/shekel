@@ -7,7 +7,7 @@ import {
   transformDataToCandlestickFormat,
 } from './utils'
 
-// function to send a request to the queue
+// Function to send a request to the queue
 export const sendRequestToQueue = async (req: Request) => {
   const queue = 'tasks'
   const conn = await amqp.connect('amqp://localhost')
@@ -18,7 +18,7 @@ export const sendRequestToQueue = async (req: Request) => {
   channel.close()
 }
 
-// function to process a request from the queue
+// Function to process a request from the queue
 export const processQueueRequest = async () => {
   const queue = 'tasks'
   const conn = await amqp.connect('amqp://localhost')
