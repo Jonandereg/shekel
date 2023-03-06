@@ -37,11 +37,17 @@ export const transformDataToCandlestickFormat = (
   return candlestickData
 }
 
-export const getCandleStickData = async () => {
+export const getCandleStickData = async ({
+  asset,
+  interval,
+}: {
+  asset: string
+  interval: string
+}) => {
   let response: any
   try {
     response = await axios.get(
-      `https://data.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=15`
+      `https://data.binance.com/api/v3/klines?symbol=${asset}USDT&interval=${interval}&limit=15`
     )
   } catch (error) {
     console.log(

@@ -26,7 +26,8 @@ export const processQueueRequest = async () => {
   console.log('ready to process request')
   channel.consume(queue, async (msg) => {
     if (msg !== null) {
-      const data = await getCandleStickData()
+      const { asset, interval } = JSON.parse(msg.content.toString())
+      const data = await getCandleStickData({ asset, interval })
       if (data) {
         const transformedData = transformDataToCandlestickFormat(data)
         await paintChart(transformedData)
