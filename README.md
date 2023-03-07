@@ -72,7 +72,7 @@ API:
 In order to run this project docker and Node >= 16 are required
 To run the client:
 1. open new terminal
-2. cd client
+2. cd  to shekel/client
 3. run `npm install`
 4. run `npm run dev`
 5. open [http://localhost:3000](http://localhost:3000) in your browser (tested in Chrome) 
@@ -81,7 +81,7 @@ to run the server:
 
 1.in the root server folder create an .env file with the variables shared with you through a different channel 
 2.open a new terminal 
-3. cd server
+3. cd shekel/server
 4 run `npm install`
 5. run `npm run rabbit` 
 6. open another terminal
