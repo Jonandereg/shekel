@@ -73,18 +73,20 @@ In order to run this project docker and Node >= 16 are required
 To run the client:
 1. open new terminal
 2. cd client
-3. run `npm run dev`
-4. open [http://localhost:3000](http://localhost:3000) in your browser (tested in Chrome) 
+3. run `npm install`
+4. run `npm run dev`
+5. open [http://localhost:3000](http://localhost:3000) in your browser (tested in Chrome) 
 
 to run the server:
 
-1.create an .env file with the variables shared with you through a different channel 
+1.in the root server folder create an .env file with the variables shared with you through a different channel 
 2.open a new terminal 
 3. cd server
-4. run `npm run rabbit` 
-5. open another terminal
-6.cd server
-7. run `npm run start`
+4 run `npm install`
+5. run `npm run rabbit` 
+6. open another terminal
+7.cd server
+8. run `npm run start`
 
 
 
