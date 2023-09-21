@@ -8,7 +8,7 @@ By the way if you are wondering about the name Shekel is because shekel is the f
 
 
 ## Timeframe and other considerations
-Due to my current role and personal situation the time I had for this project was limited, this project was done exclusively over the weekend
+Due to my current role and personal situation the time I had for this project was limited, this project was done exclusively over a weekend
 with a split on Saturday of 70% Research- 30% developing and Sunday 80% developing - 20% research. I estimate including research time this whole project might have take me around 16 to 20 hours. 
 main reason for that is that I was unfamiliar with the following topics as you will probably notice in the code:
 - how to handle long standing requests
